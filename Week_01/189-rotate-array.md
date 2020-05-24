@@ -43,8 +43,10 @@ var rotate = function(nums, k) {
         result.push(nums[i]);
     }
     for(var j = 0;j<nums.length-m;j++){
-        result.push(nums[i]);
+        result.push(nums[j]);
     }
-    nums = result;
+    for(var n=0;n<result.length;n++){
+            nums[n] = result[n];
+    }
 };
 ```
